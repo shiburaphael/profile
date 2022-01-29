@@ -73,6 +73,13 @@ hr {
   font-weight: 100;
   text-align: center;
 }
+@media (max-width: 768px) {
+  .display-4 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+}
 @media (max-width: 578px) {
   .port-item i,
   .port-item span {
