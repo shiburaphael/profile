@@ -929,13 +929,13 @@ a, a:visited, a:active {
   padding-inline-end: 0.25rem;
 }
 .modal__body__banner.mazak {
-  background: url(../../images/Mazak.jpg);
+  background: url(../images/Mazak.jpg);
 }
 .modal__body__banner.gated {
-  background: url(../../images/gated_app.jpg);
+  background: url(../images/gated_app.jpg);
 }
 .modal__body__banner.rented {
-  background: url(../../images/RentalHouse.jpg);
+  background: url(../images/RentalHouse.jpg);
 }
 .modal__imgs {
   height: 31.25rem;
