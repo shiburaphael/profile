@@ -1,0 +1,70 @@
+@use'../util/' as u;
+.header{   
+    // padding-block: u.rem(30); 
+    display: flex;  
+    justify-content: space-between;
+    background-color: var(--c-blue);
+    z-index: 100;
+    position: relative;    
+    @media(width >= u.em(1110)){
+        // padding-block: u.rem(90) u.rem(55);
+    }    
+    &__left{  
+        display:flex;
+        align-items: center;
+        gap:u.rem(8);
+        padding: u.rem(8);
+        &__logo{
+            padding-right: u.rem(8);
+            border-right: u.rem(2) solid var(--c-yellow);
+                img{                   
+                    width: u.rem(64);
+                    @media(width >= u.em(1110)){
+                      width: u.rem(64);                
+                    }
+                }
+        }
+        &__mobile{
+            display: grid;
+            padding: u.rem(8);
+            //adjusting-layout
+            color: var(--c-gray);
+
+            span:last-child{
+                font-size: u.rem(20);
+                font-weight: 700;
+                
+                background:var(--gradient-text);
+                background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+    }
+    &__link{
+        color: var(--c-silver);
+    }
+    &__link:hover{
+        color: var(--accent);
+    }
+    &__links{        
+        display: flex;        
+        gap: u.rem(40);
+        list-style: none; 
+        a{
+            display: flex;
+            align-items: center;
+            gap: u.rem(6);
+            font-size: u.rem(16);
+            font-weight: 400;
+        }       
+        @media(width < u.em(1110)){
+            flex-direction: column;
+           gap: u.rem(24);
+        }
+    }
+    
+}
+
+.header.zindex{
+    z-index: 0;
+}

@@ -3,487 +3,1421 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
-      integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
-      integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="css/bootstrap.css" crossorigin="anonymous" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,500;0,700;1,100&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/compiled.css" />
-    <title>Shibu John</title>
+    <title>Shibu John Raphael | Lead developer portfolio</title>
+    <link rel="stylesheet" href="dist/style.css" />
+    <!-- <script src="scripts/main.js"></script> -->
   </head>
-
   <body>
-    <!-- START HERE -->
-    <div class="container">
-      <header id="main-header">
-        <div class="row no-gutters">
-          <div class="col-lg-4 col-md-5">
-            <img
-              src="img/3win062-current-adj-3.jpg"
-              alt="profile image"
-              class="img-fluid"
+    <div class="overlay hidden"></div>
+    <div id="particles-js"></div>
+    <header class="header wrapper">
+      <article class="header__left">
+        <span class="header__left__logo">
+          <a href="/">
+            <img src="./images/sjr-logo.png" alt="sjr-logo" />
+          </a>
+        </span>
+        <div class="header__left__mobile">
+          <span>Call/Whatsapp Now</span>
+          <span>+91 9790740963</span>
+        </div>
+      </article>
+      <nav class="nav" aria-label="Site">
+        <button
+          id="btnOpen"
+          class="nav__open"
+          aria-labelledby="nav-label"
+          aria-expanded="false"
+        >
+          <span id="nav-label" hidden>Navigation</span>
+          <svg
+            width="40"
+            height="17"
+            viewBox="0 0 40 17"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            aria-hidden="true"
+          >
+            <rect id="Rectangle" y="7" width="40" height="3" fill="#00001A" />
+            <rect
+              id="Rectangle_2"
+              y="14"
+              width="40"
+              height="3"
+              fill="#00001A"
             />
-          </div>
-          <div class="col-lg-8 col-md-7">
-            <div class="d-flex flex-column">
-              <div class="p-5 bg-dark text-white">
-                <div
-                  class="d-flex flex-row justify-content-between align-items-center"
-                >
-                  <h1 class="display-4">Shibu John Raphael</h1>
-                  <div class="social-icon">
-                    <a href="https://github.com/" class="text-white"
-                      ><i class="fab fa-github"></i
-                    ></a>
-                  </div>
-                  <div class="social-icon d-none d-md-block">
-                    <a href="https://www.facebook.com/" class="text-white"
-                      ><i class="fab fa-facebook"></i
-                    ></a>
-                  </div>
-                  <div class="social-icon">
-                    <a href="https://www.behance.net/" class="text-white"
-                      ><i class="fab fa-behance"></i
-                    ></a>
-                  </div>
-                  <div class="social-icon">
-                    <a href="https://www.linkedin.com/" class="text-white"
-                      ><i class="fab fa-linkedin"></i
-                    ></a>
-                  </div>
-                </div>
-              </div>
-              <div class="bg-black p-4">Lead Developer</div>
-              <div>
-                <div
-                  class="d-flex flex-row text-white align-items-strech text-center"
-                >
-                  <div
-                    class="port-item justify-content-center bg-primary py-sm-3 py-md-5 py-xs-2"
-                    data-toggle="collapse"
-                    data-target="#home"
-                  >
-                    <i class="fas fa-home fa-2x d-block"></i>
-                    <span class="d-none d-md-block">Home</span>
-                  </div>
-                  <div
-                    class="port-item justify-content-center bg-success"
-                    data-toggle="collapse"
-                    data-target="#resume"
-                  >
-                    <i class="fas fa-graduation-cap fa-2x d-block"></i>
-                    <span class="d-none d-md-block">Resume</span>
-                  </div>
-                  <div
-                    class="port-item justify-content-center bg-warning"
-                    data-toggle="collapse"
-                    data-target="#work"
-                  >
-                    <i class="fas fa-folder-open fa-2x d-block"></i>
-                    <span class="d-none d-md-block">Work</span>
-                  </div>
-                  <div
-                    class="port-item justify-content-center bg-danger"
-                    data-toggle="collapse"
-                    data-target="#Contact"
-                  >
-                    <i class="fas fa-envelope fa-2x d-block"></i>
-                    <span class="d-none d-md-block">Contact</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </header>
-      <!--Home Section-->
-      <div id="home" class="collapse show">
-        <div class="card card-body bg-primary text-white py-5">
-          <h2 class="">About Me</h2>
-          <p class="lead">
-           <!-- I am Lead Developer(UI & UX) focused on mobile, web design, Web apps and brand identity with 13 years of experience in the design industry. -->
-           I'm a <b>Lead UI/UX Designer & front-end developer</b> with 13
-           years of professional experience. I'm interested in all kinds of
-           visual communication, but my major focus is on designing prototype using Figma for various devices like
-           Desktop, Mobile & Tablet interfaces. I also have skills in other fields like
-           branding, UI development and Figma Trainer. 
-           
-           <!-- I'm a <b>Senior UI/UX Designer & front-end developer</b> with 12
-            years of professional experience. I'm interested in all kinds of
-            visual communication, but my major focus is on designing prototype,
-            mobile & tablet interfaces. I also have skills in other fields like
-            branding, icon design and web development. -->
-          </p>
-        </div>
-        <div class="card card-body py-5">
-          <h3>My Skills</h3>
-          <p class="">
-            Consistently achieving results, even under tough circumstances.
-          </p>
-          <hr />
-          <h4>HTML 5</h4>
-          <div class="progress mb-3">
-            <div class="progress-bar bg-success w-80"></div>
-          </div>
-          <h4>CSS 3</h4>
-          <div class="progress mb-3">
-            <div class="progress-bar bg-success w-70"></div>
-          </div>
-          <h4>Adobe XD 2023</h4>
-          <div class="progress mb-3">
-            <div class="progress-bar bg-success w-80"></div>
-          </div>
-          <h4>Figma 2023</h4>
-          <div class="progress mb-3">
-            <div class="progress-bar bg-success w-90"></div>
-          </div>
-          <h4>Adobe Creative Cloud 2023</h4>
-          <div class="progress mb-3">
-            <div class="progress-bar bg-success w-80"></div>
-          </div>
-          <h4>JavaScript</h4>
-          <div class="progress mb-3">
-            <div class="progress-bar bg-success w-50"></div>
-          </div>
-          <h4>Angular</h4>
-          <div class="progress mb-3">
-            <div class="progress-bar bg-success w-40"></div>
-          </div>
-        </div>
-      </div>
-      <div id="resume" class="collapse">
-        <div class="card card-body bg-success text-white py-5">
-          <h2>My Resume</h2>
-          <p class="">
-            <!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum,
-            cupiditate! -->
-          </p>
-        </div>
-        <div class="card card-body text-dark">
-          <h3>EDUCATION</h3>
-          <div class="card-deck">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Arena Multimedia Specialist(AMSP)</h4>
-                <p class="p-2 mb-3 bg-success text-white">
-                  Arena Multimedia Division of Aptech, India
-                </p>
-                <p class="p-2 mb-3 bg-success text-white">2 Years Course</p>
-              </div>
-              <div class="card-footer">
-                <h6 class="text-muted">IN MAY 2002</h6>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Bachelor of Commerce (B.Com.)</h4>
-                <p class="p-2 mb-3 bg-success text-white">
-                  University of Kerala, India
-                </p>
-                <p class="p-2 mb-3 bg-success text-white">3 Years Course</p>
-              </div>
-              <div class="card-footer">
-                <h6 class="text-muted">JUNE 1999</h6>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card card-body">
-          <h3 class="">Where have I worked?</h3>
-          <p class="">
-            <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit,
-            soluta asperiores eaque omnis numquam non! -->
-          </p>
-          <div class="card-deck mb-5">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Customer Analytics India Pvt.Ltd.</h4>
-                <p class="card-text">
-                  For over 25 years Customer Analytics has thrived providing
-                  technology and analytical services.
-                </p>
-                <p class="p-2 mb-3 bg-success text-white">
-                  Posistion: Senior UI/UX Designer
-                </p>
-                <!-- <p class="p-2 mb-3 bg-success text-white">
-                  October 2009 - CURRENT
-                </p>
-                <p class="p-2 mb-3 bg-success text-white">
-                  Posistion: UI/UX Designer
-                </p> -->
-              </div>
-              <div class="card-footer">
-                <h6 class="text-muted">October 2009 - CURRENT</h6>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">
-                  Horizon Solutions & Services
-                </h4>
-                <p class="card-text">
-                  Business and Technical Design Solutions for Companies.
-             
-                </p>
-                <!-- <p class="p-2 mb-3 bg-success text-white">
-                 
-                </p> -->
-                <p class="p-2 mb-3 bg-success text-white">
-                  Posistion: Graphic/Web Designer (
-                </p>
-              </div>
-              <div class="card-footer">
-                <h6 class="text-muted">2007 - 2009</h6>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">
-                  Sadco Plastic Industries, Sharjah – U.A.E.
-                </h4>
-                <p class="card-text">
-                  Sadco Plastic Industries Limited is a Manufacturer & Suppliers
-                  Of Plastics & Plastic Products.
-                </p>
-                <p class="p-2 mb-3 bg-success text-white">
-                  Posistion: Graphic Designer
-                </p>
-                <!-- <p class="p-2 mb-3 bg-success text-white">
-                  Posistion: UI/UX Designer
-                </p>
-                <p class="p-2 mb-3 bg-success text-white">
-                  Posistion: UI/UX Designer
-                </p> -->
-              </div>
-              <div class="card-footer">
-                <h6 class="text-muted">2004 - 2007</h6>
-              </div>
-            </div>
-
-          </div>
-
-          <div class="card-deck mb-3">
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">Radium Caltech Pvt.Ltd,</h4>
-                <p class="card-text">
-                  Advertisement Designing, Branding & Pamphlets, Brochures etc.
-                </p>
-                
-                <p class="p-2 mb-3 bg-success text-white">
-                  Posistion: Graphic Designer
-                </p>
-                <!-- <p class="p-2 mb-3 bg-success text-white">
-                  October 2009 - CURRENT
-                </p>
-                <p class="p-2 mb-3 bg-success text-white">
-                  Posistion: UI/UX Designer
-                </p> -->
-              </div>
-              <div class="card-footer">
-                <h6 class="text-muted">2003 - 2004</h6>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-body">
-                <h4 class="card-title">
-                  S. Joseph & Co.
-                </h4>
-                <p class="card-text">
-                  Preparation Final Accounts, assisting in completing end of year accounting activities.
-                <br><br>
-                </p>
-                <!-- <p class="p-2 mb-3 bg-success text-white">
-                 
-                </p> -->
-                <p class="p-2 mb-3 bg-success text-white">
-                  Posistion: Assistant/Accountant
-                </p>
-              </div>
-              <div class="card-footer">
-                <h6 class="text-muted">1999 - 2002</h6>
-              </div>
-            </div>  
-          </div>
-        </div>
-      </div>
-      <!--Works-->
-      <div id="work" class="collapse">
-        <div class="card card-body bg-warning text-white py-5">
-          <h2>My Works</h2>
-          <p class="">
-            <!-- Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nostrum,
-            cupiditate! -->
-          </p>
-        </div>
-        <div class="card card-body py-5">
-          <h3>What have I built?</h3>
-          <p>Get a quick idea of my design styles.</p>
-          <div class="row no-gutters">
-            <div class="col-md-3">
-              <a href="img/NotePad_NEW.jpg" data-toggle="light-box">
-                <img src="./img/NotePad_NEW-600.png" alt="" class="img-fluid" />
-              </a>
-            </div>
-            <div class="col-md-3">
+            <rect id="Rectangle_3" width="40" height="3" fill="#00001A" />
+          </svg>
+        </button>
+        <div class="nav__overlay" aria-hidden="true"></div>
+        <div class="nav__content" role="dialog" aria-labelledby="nav-label">
+          <button id="btnClose" class="nav__close" aria-label="Close">
+            <svg
+              width="32"
+              height="31"
+              viewBox="0 0 32 31"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <rect
+                id="Rectangle"
+                x="2.91846"
+                y="0.297211"
+                width="40"
+                height="3"
+                transform="rotate(45 2.91846 0.297211)"
+                fill="#00001A"
+              />
+              <rect
+                id="Rectangle_2"
+                x="0.797363"
+                y="28.5815"
+                width="40"
+                height="3"
+                transform="rotate(-45 0.797363 28.5815)"
+                fill="#00001A"
+              />
+            </svg>
+          </button>
+          <ul class="header__links">
+            <li>
               <a
-                href="./img/InspringThoughts-Sales-man-pitch.png"
-                data-toggle="light-box"
+                class="header__link"
+                href="https://www.linkedin.com/in/shibu-john-raphael-sjr14/"
+                ><ion-icon name="logo-linkedin"></ion-icon> LinkedIn</a
               >
-                <img
-                  src="./img/InspringThoughts-600.png"
-                  alt=""
-                  class="img-fluid"
-                />
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a href="./img/pongal_greeting.jpg" data-toggle="light-box">
-                <img src="./img/pongal_600.png" alt="" class="img-fluid" />
-              </a>
-            </div>
-            <div class="col-md-3">
-              <a href="./img/suggestionBox.jpg" data-toggle="light-box">
-                <img
-                  src="./img/suggestionBox-600.png"
-                  alt=""
-                  class="img-fluid"
-                />
-              </a>
-            </div>
-          </div>
+            </li>
+            <li>
+              <a class="header__link" href="mailto:shiburaphael@gmail.com"
+                ><ion-icon name="mail-open-outline"></ion-icon> Email</a
+              >
+            </li>
+            <li>
+              <a class="header__link" href="#projectSection"
+                ><ion-icon name="code-working-outline"></ion-icon> Case Study</a
+              >
+            </li>
+            <li>
+              <a
+                class="header__link"
+                href="https://www.behance.net/shiburapahel"
+                ><ion-icon name="logo-behance"></ion-icon> Behance</a
+              >
+            </li>
+          </ul>
         </div>
-      </div>
-      <!--Contact-->
-      <div id="Contact" class="collapse">
-        <div class="card card-body bg-danger text-white py-5">
-          <h2 class="contact">Contact</h2>
-          <p class="">
-            <!-- Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet
-            adipisci laborum iste dicta cupiditate. Nostrum. -->
+      </nav>
+    </header>
+    <main class="wrapper">
+      <article class="feature">
+        <section class="feature__left">
+          <div class="feature__left__title">
+            <!--fadeIn wait-2s-->
+            <h2 id="nice">Nice to meet you!</h2>
+            <h4 class="feature__title__underline">I'm Shibu John Raphael</h4>
+          </div>
+          <p class="feature__description">
+            Based in Chennai - India, I'm a UI/UX Designer & Developer
+            passionate about building accessible web apps that users love.
           </p>
-        </div>
-        <div class="card card-body py-5">
-          <form action="">
-            <div class="form-group">
-              <div class="input-group input-group-lg">
-                <div class="input-group-prepend">
-                  <span class="input-group-text bg-danger text-white"
-                    ><i class="fas fa-user"></i
-                  ></span>
-                </div>
-                <input
-                  type="text"
-                  class="form-control bg-danger text-white"
-                  placeholder="Name"
-                />
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="input-group input-group-lg">
-                <div class="input-group-prepend">
-                  <span class="input-group-text bg-danger text-white"
-                    ><i class="fas fa-envelope"></i
-                  ></span>
-                </div>
-                <input
-                  type="email"
-                  class="form-control bg-danger text-white"
-                  placeholder="E-mail"
-                />
-              </div>
-            </div>
-            <div class="form-group">
-              <div class="input-group input-group-lg">
-                <div class="input-group-prepend">
-                  <span class="input-group-text bg-danger text-white"
-                    ><i class="fas fa-pencil-alt"></i
-                  ></span>
-                </div>
-                <textarea
-                  class="form-control bg-danger text-white"
-                  placeholder="Message"
-                ></textarea>
-              </div>
-            </div>
-            <input type="submit" value="Submit" class="btn btn-danger" />
-          </form>
-        </div>
-      </div>
-      <!--Footer Section-->
-      <footer id="main-footer" class="p-5 bg-dark text-white">
-        <div class="row">
-          <!-- <div class="col-md-6">
-            <a href="#" class="btn btn-outline-light">
-              <i class="fas fa-cloud"></i> Download Resume
+          <div class="feature__ctaBtns">
+            <a class="feature__ctaBtns__btn-cta" href="/">
+              <ion-icon name="location-outline"></ion-icon>
+              Chennai
             </a>
-          </div> -->
-          <div class="copyRight col-md-12">
-            Portfolio design and content © <span id="year"></span> Shibu John Raphael
+            <a class="feature__ctaBtns__btn-cta" href="/">
+              <ion-icon name="bag-outline"></ion-icon>
+              Customer Analytics India Pvt. Ltd.
+            </a>
           </div>
+        </section>
+        <section class="feature__profile">
+          <img
+            src="./images/shiburaphael.jpg"
+            alt="shiburaphael"
+            data-tilt
+          /><!--data-tilt-->
+        </section>
+      </article>     
+      <article id="projectSection"> 
+        <h1>CASE STUDIES</h1> 
+        <section class="projects">  
+        <div class="projects__list" data-tilt>
+          <img src="./images/Mazak.jpg" alt="" class="post-img" />
+          <div class="projects__list__content">
+            <h2>Mazak Fluid Solutions</h2>
+            <h4>Cleaning Machine</h4>
+            <p class="projects__list__content__para">
+              <!-- The app or platform will provide an intuitive, centralized system for managing Mazak Fluid Solutions products. It will help users easily monitor and maintain their Sump Shark® sump cleaners, dumping hoppers, and coolant dispensers, improve workflow efficiency, and ensure optimal fluid management for manufacturing processes. -->
+              The app or platform will provide an intuitive, centralized system for managing Mazak Fluid Solutions...
+            </p>
+            <div class="projects__list__content__footer">
+              <div class="projects__list__content__footer__published-date">
+                Jan 11, 2023
+              </div>
+              <div class="projects__list__content__footer__btn">
+                <a
+                  href="#"
+                  data-target="#case1"
+                  target="_parent"
+                  class="projects__list__content__footer__btn__view"
+                  >Case Study-I</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projects__list" data-tilt>          
+          <img src="./images/gated_app.jpg" alt="" class="post-img" />
+          <div class="projects__list__content">
+            <h2>Gated Community App</h2>
+            <h4>Apartment Maintenance</h4>
+            <p>
+              Gate Community is an app created to manage security and community living in housing societies.
+            </p>
+            <div class="projects__list__content__footer">
+              <div class="projects__list__content__footer__published-date">
+                Jan 11, 2023
+              </div>
+              <div class="projects__list__content__footer__btn">
+                <a
+                  href="#"
+                  data-target="#case2"
+                  target="_parent"
+                  class="projects__list__content__footer__btn__view"
+                  >Case Study-II</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="projects__list" data-tilt>
+          <img src="./images/RentalHouse.jpg" alt="" class="post-img" />
+          <div class="projects__list__content">
+            <h2>Rental House</h2>
+            <h4>Find your perfect place</h4>
+            <p>
+              The goal of the Rental House app is to streamline the process of finding, exploring, and securing rental... 
+            </p>
+            <div class="projects__list__content__footer">
+              <div class="projects__list__content__footer__published-date">
+                July 05, 2024
+              </div>
+              <div class="projects__list__content__footer__btn">
+                <a
+                  href="#"
+                  data-target="#case3"
+                  target="_parent"
+                  class="projects__list__content__footer__btn__view"
+                  >Case Study-III</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
+      </article>
+      <article class="skills">
+        <!-- <h2 class="visually-hidden">Skills</h2> -->
+        <div class="skills__lists">
+          <div class="skills__lists__item">
+            <h3 class="skills__lists__title">Creative Cloud</h3>
+            <p class="skills__lists__description">15 Years Experience</p>
+          </div>
+          <div class="skills__lists__item">
+            <h3 class="skills__lists__title">CSS</h3>
+            <p class="skills__lists__description">15 Years Experience</p>
+          </div>
+          <div class="skills__lists__item">
+            <h3 class="skills__lists__title">HTML</h3>
+            <p class="skills__lists__description">15 Years Experience</p>
+          </div>
+          <div class="skills__lists__item">
+            <h3 class="skills__lists__title">Adobe XD</h3>
+            <p class="skills__lists__description">5 Years Experience</p>
+          </div>
+          <div class="skills__lists__item">
+            <h3 class="skills__lists__title">Figma</h3>
+            <p class="skills__lists__description">4 Years Experience</p>
+          </div>
+          <div class="skills__lists__item">
+            <h3 class="skills__lists__title">JavaScript</h3>
+            <p class="skills__lists__description">4 Years Experience</p>
+          </div>
+          <div class="skills__lists__item">
+            <h3 class="skills__lists__title">Angular</h3>
+            <p class="skills__lists__description">3 Years Experience</p>
+          </div>
+          <div class="skills__lists__item">
+            <h3 class="skills__lists__title">React</h3>
+            <p class="skills__lists__description">3 Years Experience</p>
+          </div>
+          <div class="skills__lists__item">
+            <h3 class="skills__lists__title">Tailwind CSS</h3>
+            <p class="skills__lists__description">2 Years Experience</p>
+          </div>
+        </div>
+        <div class="skills__rings">
+          <img
+            class=""
+            src="../images/pattern-rings.svg"
+            alt=""
+            width="530"
+            height="129"
+          />
+        </div>
+      </article>
+      <footer class="footer">
+        <div class="footer__logo">
+          <a href="/">
+            <span class="footer__logo__imgs">
+            <img src="./images/sjr-logo.png" alt="sjr-logo" />            
+            <img src="https://badges.pufler.dev/visits/shiburaphael/shiburaphael" />   
+          </span>         
+          </a>
+        </div>
+        <div class="footer__copyright">
+          <p>
+            Portfolio design and content @ <span id="currentYear"></span> by
+            Shibu John Raphael
+          </p>         
+        </div>
+        <div class="footer__social">
+          <a href="https://www.linkedin.com/in/shibu-john-raphael-sjr14/">
+            <ion-icon name="logo-linkedin" data-tilt></ion-icon>
+          </a>
+          <a href="https://www.behance.net/shiburapahel">
+            <ion-icon name="logo-behance" data-tilt></ion-icon>
+          </a>
+          <a href="https://www.facebook.com/login/">
+            <ion-icon name="logo-facebook" data-tilt></ion-icon>
+          </a>
         </div>
       </footer>
-    </div>
+      <div class="modal" id="case1">
+        <div class="modal__header">
+          <h1 class="modal__title">Project 1</h1>
+          <button class="modal__close" data-target="#case1">
+            <svg
+              width="32"
+              height="31"
+              viewBox="0 0 32 31"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <rect
+                id="Rectangle"
+                x="2.91846"
+                y="0.297211"
+                width="40"
+                height="3"
+                transform="rotate(45 2.91846 0.297211)"
+                fill="#00001A"
+              />
+              <rect
+                id="Rectangle_2"
+                x="0.797363"
+                y="28.5815"
+                width="40"
+                height="3"
+                transform="rotate(-45 0.797363 28.5815)"
+                fill="#00001A"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="modal__body">     
+          <div class="modal__body__banner mazak">
+            <h2 class="modal__body__banner_title">Mazak Fluid Solutions</h2>
+            <h3 class="modal__body__banner_subTitle">Cleaning Machine</h3>
+              <div class="modal__body__banner__footer">
+                <div class="modal__body__banner__footer__company">                
+                  <ion-icon name="bag-outline"></ion-icon>
+                  <div><span>Project:</span>Mazak</div>
+                </div>
+                <div class="modal__body__banner__footer__month">
+                  <ion-icon name="time-outline"></ion-icon>
+                  <div><span>Months:</span>7 Months</div>
+                </div>
+                <div class="modal__body__banner__footer__date">
+                  <ion-icon name="time-outline"></ion-icon>
+                  <div><span>Date:</span>February 2024</div>
+                </div>
+                <div class="modal__body__banner__footer__role">
+                  <ion-icon name="person-outline"></ion-icon>
+                  <div><span>Role:</span>UX Lead</div>                  
+                </div>
+              </div>
+          </div>
+          <div class="modal__body__content">
+            <article class="modal__body__content__overview">
+              <h1>Overview: </h1> 
+              <p> Mazak Fluid Solutions specializes in the design and manufacture of products like the Sump Shark® sump cleaners, dumping hoppers, and coolant dispensers that are essential in industrial and manufacturing settings. These solutions are particularly important for maintaining optimal fluid systems in machinery, preventing contamination, and ensuring a safe and efficient production environment.
+                  The project will focus on creating a user-friendly app or digital platform for managing and maintaining these products. This could include tracking performance, maintaining fluid levels, ordering replacement parts, and providing timely maintenance notifications.</p>
+                <section  class="modal__body__content__section__title">
+                  <h1>Project Vision</h1>
+                  <div class="modal__body__content__two-columns">
+                    <div class="modal__body__content__two-columns__left">
+                      <h4>Target Audience:</h4>
+                        <ul class="modal__body__content__two-columns__left__list">
+                          <li><span>Manufacturing Operators</span> and <span>Technicians</span> who handle day-to-day operation and maintenance of the machinery.</li>
+                          <li><span>Facility Managers</span> and <span>Maintenance Supervisors</span> responsible for overseeing the fluid systems, managing equipment, and ensuring uptime.</li>
+                          <li><span>Suppliers</span> or <span>Service Technicians</span> who provide parts or servicing for the equipment.</li>
+                        </ul>
+                    </div>
+                    <div class="modal__body__content__two-columns__right">
+                      <h4>Key Features:</h4>
+                      <ul class="modal__body__content__two-columns__right__list">
+                        <li>Real-time Monitoring: Track the performance of sump cleaners, coolant dispensers, and hoppers in real-time.</li>
+                        <li>Maintenance Scheduling & Alerts: Receive notifications about regular maintenance, fluid changes, or performance issues.</li>
+                        <li>Order & Inventory Management: Track fluid levels and schedule reorders for fluids or parts needed for the equipment.</li>
+                        <li>Usage Reports: Generate reports that analyze equipment efficiency, fluid consumption, and machine downtime.</li>
+                        <li>Product Support: Access user manuals, troubleshooting guides, and customer support.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+                <section class="modal__body__content__section__title">
+                  <h1>Challenges</h1>
+                  <div class="modal__body__content__row">  
+                    <div class="modal__body__content__row__card"> 
+                      <div class="modal__body__content__row__card__columns">
+                        <ul class="modal__body__content__row__card__columns__list">
+                          <li><span>Integration with Equipment:</span> Ensuring real-time data integration with Mazak machines (Sump Shark®, dumping hoppers, etc.) to track performance and fluid levels.
+                          <li><span> User Needs:</span> The platform needs to cater to different types of users (operators, managers, and suppliers), each with different needs and permissions.</li>
+                          <li><span>Data Accuracy & Timeliness:</span> Ensuring accurate data collection for maintenance schedules, fluid levels, and machine performance to prevent operational downtime.</li>
+                          <li><span>User-Friendly Interface:</span> Operators and technicians may not be tech-savvy, so the interface must be simple and intuitive.</li>
+                          <li><span>Equipment Compatibility:</span> Mazak Fluid Solutions products may vary in model, so the app must support multiple models with customized features.</li>
+                          <li><span>Environmental Concerns:</span> Providing eco-friendly fluid options and tracking fluid waste or recycling capabilities for sustainable operations.</li>
+                          <li><span>Multi-Device Support:</span> The platform must work across mobile devices, tablets, and desktop for flexibility.</li>                
+                        </ul> 
+                      </div>           
+                  </div>
+                </div>  
+                </section>
+                <section class="modal__body__content__section__title">
+                  <h1>Kickoff</h1>
+                  <div class="modal__body__content__row">  
+                    <div class="modal__body__content__row__card"> 
+                      <div class="modal__body__content__row__card__columns">
+                        <ul class="modal__body__content__row__card__columns__list__kickoff">
+                          <li><span>Stakeholder Meeting:</span> Align on the goals, functionality, and target users. Define what data will be tracked and how it will be presented to users.</li>
+                          <li><span>User Research:</span> Interview operators, maintenance staff, and facility managers to understand pain points, needs, and desires.</li>
+                          <li><span>Market Research:</span> Examine competitors or similar platforms that track and manage industrial equipment and fluids.</li>
+                          <!-- <li><span>Define Success Metrics:</span> Key metrics may include user engagement, time saved in maintenance tracking, reduction in downtime, and user satisfaction with the app.</li> -->
+                        </ul> 
+                      </div>           
+                  </div>
+                </div>  
+                </section>                
+                </article>    
+                <article class="modal__body__content__persona">
+                  <h1>Meet the user</h1>
+                  <div class="modal__body__content__persona__container">
+                    <div class="modal__body__content__persona__container__primary">
+                      <div class="modal__body__content__persona__container__card">   
+                      <div class="modal__body__content__persona__container__header">
+                      <img src="images/avatar_one.jpg" class="modal__body__content__persona__container__header__profile-pic" alt="" />
+                      <div class="persona-profile">
+                        <h4>Primary</h4>
+                        <ul>
+                          <li><span>Name:</span>Tom</li>
+                          <li><span>Age:</span>34</li>
+                          <li><span>Occupation:</span> Manufacturing Operator</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="modal__body__content__persona__container__description">
+                      <div class="needs">
+                        <h4>Needs:</h4>
+                        <ol>
+                          <li>Monitor multiple machines’ performance and fluid usage across the plant.</li>
+                          <li>Receive and track reports on machine health, fluid usage, and maintenance schedules.</li>
+                          <li>Order parts and fluids for the entire facility as needed.</li>
+                        </ol>
+                      </div>
+                      <div class="challenges">
+                        <h4>Challenges: </h4>
+                        <ol>
+                          <li>Managing a large number of machines with different maintenance needs.</li>
+                          <li>Balancing maintenance with production demands.</li>
+                        </ol>
+                      </div>
+                      <div class="goals">
+                        <h4>Goals:</h4>
+                        <ol>
+                          <li>Streamline maintenance workflows, reduce downtime, and manage inventory efficiently.</li>
+                        </ol>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="modal__body__content__persona__container__secondary">
+                      <div class="modal__body__content__persona__container__card">                      
+                      <div class="modal__body__content__persona__container__header">
+                        <img src="images/avatar_two.jpg" class="modal__body__content__persona__container__header__profile-pic" alt="" />
+                        <div class="persona-profile">
+                          <h4>secondary</h4>
+                          <ul>
+                            <li><span>Name:</span>Emma</li>
+                            <li><span>Age:</span>42</li>
+                            <li><span>Occupation:</span> Facility Manager</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="modal__body__content__persona__container__description">
+                        <div class="needs">
+                          <h4>Needs:</h4>
+                          <ol>
+                            <li>Monitor multiple machines’ performance and fluid usage across the plant.</li>
+                            <li>Receive and track reports on machine health, fluid usage, and maintenance schedules.</li>
+                            <li>Order parts and fluids for the entire facility as needed.</li>
+                          </ol>
+                        </div>
+                        <div class="challenges">
+                          <h4>Challenges: </h4>
+                          <ol>
+                            <li>Managing a large number of machines with different maintenance needs.</li>
+                            <li>Balancing maintenance with production demands.</li>
+                          </ol>
+                        </div>
+                        <div class="goals">
+                          <h4>Goals:</h4>
+                          <ol>
+                            <li>Streamline maintenance workflows, reduce downtime, and manage inventory efficiently.</li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="modal__body__content__persona__container__supplementary">  
+                      <div class="modal__body__content__persona__container__card">                      
+                     <div class="modal__body__content__persona__container__header">
+                      <img src="images/avatar_three.jpg" class="modal__body__content__persona__container__header__profile-pic" alt="" />
+                      <div class="persona-profile">
+                        <h4>supplementary</h4>
+                        <ul>
+                          <li><span>Name:</span>Chris</li>
+                          <li><span>Age:</span>50</li>
+                          <li><span>Occupation:</span> Service Technician</li>
+                        </ul>
+                      </div>
+                    </div>
+                     <div class="modal__body__content__persona__container__description">
+                      <div class="needs">
+                        <h4>Needs:</h4>
+                        <ol>
+                          <li>Receive service requests and inventory updates.</li>
+                          <li>Track the health and usage of parts for customers.</li>
+                          <li>Ensure that fluid orders are processed in a timely manner.</li>
+                        </ol>
+                      </div>
+                      <div class="challenges">
+                        <h4>Challenges: </h4>
+                        <ol>
+                          <li>Managing multiple customer accounts and servicing needs.</li>
+                          <li>Ensuring customers receive parts/fluids before they run out.</li>
+                        </ol>
+                      </div>
+                      <div class="goals">
+                        <h4>Goals:</h4>
+                        <ol>
+                          <li>Ensure timely servicing of machinery and parts, and that customers are satisfied with the fluid solutions.</li>
+                        </ol>
+                      </div>
+                    </div>
+                    </div>
+                 </div>
+                  </div>
+                </article>
+                <article class="modal__body__content__competiveAnalysis">
+                  <h1>competiveAnalysis</h1>
+                  <p>Here’s an analysis of other fluid management or industrial maintenance platforms that could influence the design of the <span>Mazak Fluid Solutions</span> app:</p>
+                  <div class="modal__body__content__competiveAnalysis__three-col">
+                    <div class="modal__body__content__competiveAnalysis__three-col__cards">
+                      <h4>Strength</h4>
+                      <ul>
+                        <li>Real-time monitoring of fluid levels and performance in industrial machinery.</li>
+                        <li>Integrated with other factory equipment to track usage and scheduling.</li>
+                      </ul>
+                    </div>
+                    <div class="modal__body__content__competiveAnalysis__three-col__cards">
+                      <h4>Weaknesses</h4>
+                      <ul>
+                        <li>Can be complex for non-technical users to navigate.</li>
+                        <li>Not as customizable for different machine types.</li>
+                      </ul>
+                    </div>
+                    <div class="modal__body__content__competiveAnalysis__three-col__cards">
+                      <h4>Opportunity</h4>
+                      <ul>
+                        <li>Create an app that is tailored specifically for Mazak products, with simpler interfaces for ease of use.</li>
+                      </ul>
+                    </div>
+                  </div>
+                </article>
+                <article class="modal__body__content__preparing-the-journey">
+                  <h1>preparing-the-journey</h1>
+                  <div class="modal__body__content__competiveAnalysis__row">
+                    <img src="../../images/flow-chat-fluid.jpg" />
+                  </div>
+                </article>
+                <article class="modal__body__content__wireflow">
+                  <h1>wireflow</h1>
+                  <div class="modal__body__content__competiveAnalysis__row">
+                    <img src="../../images/screens.jpg" />
+                  </div>
+                </article>
+            </div>
+          </div>
+        </div>
+      </div>      
+      <div class="modal" id="case2">
+        <div class="modal__header">
+          <h1 class="modal__title">Project 2</h1>
+          <button class="modal__close" data-target="#case2">
+            <svg
+              width="32"
+              height="31"
+              viewBox="0 0 32 31"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <rect
+                id="Rectangle"
+                x="2.91846"
+                y="0.297211"
+                width="40"
+                height="3"
+                transform="rotate(45 2.91846 0.297211)"
+                fill="#00001A"
+              />
+              <rect
+                id="Rectangle_2"
+                x="0.797363"
+                y="28.5815"
+                width="40"
+                height="3"
+                transform="rotate(-45 0.797363 28.5815)"
+                fill="#00001A"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="modal__body">     
+          <div class="modal__body__banner gated">
+            <h2 class="modal__body__banner_title">Gated Community App</h2>
+            <h3 class="modal__body__banner_subTitle">Apartment Maintenance</h2>
+              <div class="modal__body__banner__footer">
+                <div class="modal__body__banner__footer__company">                
+                  <ion-icon name="bag-outline"></ion-icon>
+                  <span>Project:</span>Gated Community App
+                </div>
+                <div class="modal__body__banner__footer__month">
+                  <ion-icon name="time-outline"></ion-icon>
+                  <span>Months:</span>6 Months</div>
+                <div class="modal__body__banner__footer__date">
+                  <ion-icon name="time-outline"></ion-icon>
+                  <span>Date:</span>November 2023</div>
+                <div class="modal__body__banner__footer__role">
+                  <ion-icon name="person-outline"></ion-icon>
+                  <span>Role:</span>UX Lead</div>
+              </div>
+          </div>
+         <!--Body contents-->
+         <div class="modal__body__content">
+          <article class="modal__body__content__overview">
+            <h1>Overview: </h1> 
+            <p>The goal of the project is to create a comprehensive, user-friendly gated community app that enhances security, improves communication, streamlines management processes, and fosters community engagement. The app, called Gated Community App, will empower residents and management teams by digitizing critical aspects of gated community operations.</p>
+              <section  class="modal__body__content__section__title">
+                <h1>Project Vision</h1>
+                <div class="modal__body__content__two-columns">
+                  <div class="modal__body__content__two-columns__left">
+                    <h4>Target Audience:</h4>
+                      <ul class="modal__body__content__two-columns__left__list">
+                        <li><span>Residents:</span>
+                          <ol>
+                            <li><span>Tech-Savvy Professionals:</span> Prefer digital solutions for convenience and time-saving.</li>
+                            <li><span>Elderly Individuals:</span> Need simple, intuitive interfaces to stay informed and connected.</li>
+                            <li><span>Families:</span> Look for secure environments and tools to manage household activities efficiently.</li>
+                          </ol>
+                        </li>
+                        <li><span>Community Management:</span>
+                        <ol>
+                          <li><span>Managers and Administrators:</span> Require tools to streamline operations, monitor community activities, and maintain transparent communication with residents.</li>
+                          <li><span>Security Staff:</span> Need a system for efficient visitor management and instant alerting in emergencies.</li>
+                        </ol>
+                        </li>
+                        <li><span>Vendors and Service Providers:</span>
+                        <ol>
+                          <li>Local businesses offering services like cleaning, repairs, or groceries who want easier access to the gated community.</li>
+                        </ol>
+                        </li>
+                      </ul>
+                  </div>
+                  <div class="modal__body__content__two-columns__right">
+                    <h4>Key Features:</h4>
+                    <ul class="modal__body__content__two-columns__right__list">
+                     <li><span>Security and Visitor Management</span>
+                      <ol>
+                        <li>Pre-approved digital gate passes for guests.</li>
+                        <li>Real-time visitor logs with QR code check-ins.</li>
+                        <li>Emergency alert button for residents to notify security.</li>
+                      </ol>
+                    </li>
+                     <li><span> Communication Hub</span>
+                      <ol>
+                        <li>Centralized announcements for updates and notices.</li>
+                        <li>Direct messaging with management and neighbors.</li>
+                        <li>Multi-language support for diverse communities. </li>
+                        </li>
+                      </ol>
+                    </li>
+                     <li><span> Amenities and Facility Management</span>
+                          <ol>
+                            <li>Online booking for shared resources like clubhouses, pools, or parking spaces.</li>
+                            <li>Maintenance requests submission and tracking.</li>
+                            <li>Notifications for repairs or resource availability.</li>
+                          </ol>
+                    </li>
+                     <li><span>Payment Solutions</span>
+                      <ol>
+                        <li>Integrated payment gateway for maintenance fees, utilities, and event registrations.</li>
+                        <li>Auto-reminders for pending payments.</li>
+                        <li>Historical transaction records for transparency.</li>
+                      </ol>
+                    </li>
+                     <li><span>Community Engagement</span>
+                    <ol>
+                      <li>Event management: Registration for community gatherings, workshops, or festivals.</li>
+                      <li>Forums and classifieds for discussions, buying/selling items, or finding services.</li>
+                      <li>Neighborhood directory for connecting with other residents.</li>
+                    </ol>
+                    </li>
+                     <li><span>Emergency Support</span>
+                        <ol>
+                          <li>One-tap emergency alerts notifying security and key contacts.</li>
+                          <li>Access to emergency numbers (ambulance, fire, police).</li>
+                        </ol>
+                    </li>
+                     <li><span>Analytics and Reports</span>
+                    <ol>
+                      <li>For management: Visitor trends, payment summaries, and resource usage analytics.</li>
+                      <li>For residents: Personal history of bookings, payments, and participation in community activities.</li>
+                    </ol>
+                    </li>                     
+                    </ul>
+                  </div>
+                </div>
+              </section>
+              <section class="modal__body__content__section__title">
+                <h1>Challenges</h1>
+                <div class="modal__body__content__row">  
+                  <div class="modal__body__content__row__card"> 
+                    <div class="modal__body__content__row__card__columns__grid-2">
+                      <h4>The project encountered several challenges during its planning and development:</h4>
+                      <div class="modal__body__content__row__card__columns__col-2">
+                        <ul class="modal__body__content__row__card__columns__list">
+                          <li><span>Diverse User Needs:</span>
+                            <ol class="modal__body__content__row__card__columns__list__order">
+                              <li>Residents ranged from tech-savvy millennials to elderly individuals unfamiliar with apps.</li>
+                              <li>Multilingual requirements due to cultural diversity in the community.</li>
+                            </ol>
+                          </li>
+                          <li><span>Security Concerns:</span>
+                            <ol class="modal__body__content__row__card__columns__list__order">
+                              <li>Ensuring data privacy and security for resident information.</li>
+                              <li>Robust visitor authentication to prevent unauthorized access.</li>
+                            </ol></li>
+                          <li><span>Integration Complexity:</span>
+                            <ol class="modal__body__content__row__card__columns__list__order">
+                              <li>Existing legacy systems for community management had limited APIs.</li>
+                              <li>Real-time synchronization between management software, payment gateways, and the app.</li>
+                            </ol></li>
+                          <li><span>Adoption Resistance:</span>
+                            <ol class="modal__body__content__row__card__columns__list__order">
+                              <li>Some residents preferred traditional processes over digital systems.</li>
+                              <li>Skepticism about app reliability and data security.</li>
+                            </ol></li>
+                          <li><span>Budget Constraints:</span>
+                            <ol class="modal__body__content__row__card__columns__list__order">
+                              <li>Balancing advanced features with affordability for the community.</li>
+                            </ol></li>                        
+                        </ul> 
+                      </div>
+                    </div>           
+                </div>
+              </div>  
+              </section>
+              <section class="modal__body__content__section__title">
+                <h1>Kickoff</h1>
+                <div class="modal__body__content__row">  
+                  <div class="modal__body__content__row__card"> 
+                    <div class="modal__body__content__row__card__columns__col-2">
+                      <ul class="modal__body__content__row__card__columns__list__kickoff">
+                        <li><span>Participants:</span>
+                          <ol class="modal__body__content__row__card__columns__list__order">
+                            <li>Residents' representatives.</li>
+                            <li>Management staff.</li>
+                            <li>Security team leaders.</li>
+                            <li>Development team and project managers.</li>
+                          </ol>
+                        </li>
+                        <li><span>Activities:</span>
+                          <ol class="modal__body__content__row__card__columns__list__order">
+                            <li>Discussed pain points, project scope, and desired outcomes.</li>
+                            <li>Collected insights into user preferences through surveys and open forums.</li>
+                            <li>Prioritized features using a <strong>MoSCoW (Must Have, Should Have, Could Have, Won’t Have)</strong> analysis.</li>
+                          </ol>
+                        </li>
+                        <li><span>Outcome:</span>
+                          <ol class="modal__body__content__row__card__columns__list__order">
+                            <li>Finalized a roadmap for development with phased feature rollouts.</li>
+                            <li>Established milestones and timelines.</li>
+                          </ol>
+                        </li>
+                        <!-- <li><span>Define Success Metrics:</span> Key metrics may include user engagement, time saved in maintenance tracking, reduction in downtime, and user satisfaction with the app.</li> -->
+                      </ul> 
+                    </div>           
+                </div>
+              </div>  
+              </section>                
+              </article>    
+              <article class="modal__body__content__persona">
+                <h1>Meet the user</h1>
+                <div class="modal__body__content__persona__container">
+                  <div class="modal__body__content__persona__container__primary">
+                    <div class="modal__body__content__persona__container__card">   
+                    <div class="modal__body__content__persona__container__header">
+                    <img src="images/avatar_one.jpg" class="modal__body__content__persona__container__header__profile-pic" alt="" />
+                    <div class="persona-profile">
+                      <h4>Primary</h4>
+                      <ul>
+                        <li><span>Name:</span> Amit Verma</li>
+                        <li><span>Age:</span>35</li>
+                        <li><span>Occupation:</span> IT Specialist</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="modal__body__content__persona__container__description">
+                    <div class="needs">
+                      <h4>Needs:</h4>
+                      <div>
+                        <h3>Efficient Visitor Management:</h3>
+                        <ol>
+                          <li>Ability to pre-approve guests or service providers via the app.</li>
+                          <li>Instant notifications for visitor arrivals with a simple approval mechanism.</li>
+                        </ol>
+                      </div>
+                      <div>
+                        <h3>Streamlined Payments:</h3>
+                        <ol>
+                          <li>Quick and secure payment options for maintenance fees and other utilities.</li>
+                          <li>Access to historical payment records for personal accounting.</li>
+                        </ol>
+                      </div>
+                      <div>
+                        <h3>Automation and Integration:</h3>
+                        <ol>
+                          <li>Syncing app schedules with personal calendars or smart home devices.</li>
+                          <li>Automated reminders for events, payments, or maintenance issues.</li>
+                        </ol>
+                      </div>
+                      <div>
+                        <h3>Data Security:</h3>
+                        <ol>
+                          <li>Assurance that personal and visitor data is protected with encryption.</li>
+                          <li>Regular updates on app security measures.</li>
+                        </ol>
+                      </div>
+                    </div>
+                    <div class="challenges">
+                      <h4>Challenges: </h4>
+                      <div>
+                        <h3>Time Sensitivity:</h3>                                           
+                            <ol>
+                              <li>Delays in approving visitors or service providers at the gate disrupt his schedule.</li>
+                              <li>Wants quick access to app features without navigating through multiple menus.</li>
+                            </ol>
+                          </li>                     
+                      </div>
+                      <div>
+                        <h3>Data Privacy Concerns:</h3>                                           
+                            <ol>
+                              <li>Hesitant to share personal data and visitor information due to fear of breaches.</li>
+                              <li>Expects the app to meet high security standards like end-to-end encryption.</li>
+                            </ol>
+                          </li>                     
+                      </div>
+                      <div>
+                        <h3>Integration Issues:</h3>                                           
+                            <ol>
+                              <li>Prefers the app to integrate with smart home devices and calendars for seamless scheduling.</li>
+                                <li>Frustrated if tools he uses (e.g., payment apps or calendars) are not compatible.</li>
+                            </ol>
+                          </li>                     
+                      </div>
+                    </div>
+                    <div class="goals">
+                      <h4>Goals:</h4>
+                      <ol>
+                        <li>Quick visitor approvals via mobile.</li>
+                        <li>Seamless online payments and maintenance tracking.</li>
+                      </ol>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+                  <div class="modal__body__content__persona__container__secondary">
+                    <div class="modal__body__content__persona__container__card">                      
+                    <div class="modal__body__content__persona__container__header">
+                      <img src="images/avatar_two.jpg" class="modal__body__content__persona__container__header__profile-pic" alt="" />
+                      <div class="persona-profile">
+                        <h4>secondary</h4>
+                        <ul>
+                          <li><span>Name:</span>Meena Gupta</li>
+                          <li><span>Age:</span>65</li>
+                          <li><span>Occupation:</span>Retired Teacher</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="modal__body__content__persona__container__description">
+                      <div class="needs">
+                        <h4>Needs:</h4>
+                        <div>
+                          <h3>Ease of Use:</h3>
+                          <ol>
+                            <li>Simple, intuitive interface with minimal steps for key actions like booking amenities or reporting issues.</li>
+                            <li>Large fonts, clear labels, and an accessible design.</li>
+                          </ol>
+                        </div>
+                        <div>
+                          <h3>Timely Communication:</h3>
+                          <ol>
+                            <li>Immediate notifications for critical community updates (e.g., water outages or emergencies).</li>
+                            <li>A centralized hub for notices, eliminating the need to track paper-based updates.</li>
+                          </ol>
+                        </div>
+                        <div>
+                          <h3>Community Engagement:</h3>
+                          <ol>
+                            <li>Tools to participate in community events or connect with neighbors.</li>
+                            <li>Social features like forums or directories to stay socially active.</li>
+                          </ol>
+                        </div>
+                        <div>
+                          <h3>Support and Guidance:</h3>
+                          <ol>
+                            <li>Help sections or tutorials for app usage.</li>
+                            <li>Easily reachable support for troubleshooting.</li>
+                          </ol>
+                        </div>
+                      </div>
+                      <div class="challenges">
+                        <h4>Challenges: </h4>
+                        <div>
+                          <h3>Tech Unfamiliarity:</h3>
+                          <ol>
+                            <li>Managing a large number of machines with different maintenance needs.</li>
+                            <li>Balancing maintenance with production demands.</li>
+                          </ol>
+                        </div>
+                        <div>
+                          <h3>Communication Gaps:</h3>
+                          <ol>
+                            <li>Misses critical community updates if they are only delivered through the app, especially without timely notifications.</li>
+                          </ol>
+                        </div>
+                        <div>
+                          <h3>Reluctance to Change:</h3>
+                          <ol>
+                            <li>Prefers traditional methods (e.g., calling the management office) over using an app.</li>
+                            <li>Might feel the app doesn't cater to her specific needs without guided onboarding.</li>
+                          </ol>
+                        </div>
+                      </div>
+                      <div class="goals">
+                        <h4>Goals:</h4>
+                        <ol>
+                          <li>Easy access to important updates and alerts.</li>
+                          <li>Social features to stay connected with neighbors.</li>
+                        </ol>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="modal__body__content__persona__container__supplementary">  
+                    <div class="modal__body__content__persona__container__card">                      
+                   <div class="modal__body__content__persona__container__header">
+                    <img src="images/avatar_three.jpg" class="modal__body__content__persona__container__header__profile-pic" alt="" />
+                    <div class="persona-profile">
+                      <h4>supplementary</h4>
+                      <ul>
+                        <li><span>Name:</span>Rajesh Iyer</li>
+                        <li><span>Age:</span>42</li>
+                        <li><span>Occupation:</span> Operations Manager</li>
+                      </ul>
+                    </div>
+                  </div>
+                   <div class="modal__body__content__persona__container__description">
+                    <div class="needs">
+                      <h4>Needs:</h4>
+                      <div>
+                        <h3>Centralized Dashboard:</h3>
+                        <ol>
+                          <li>Overview of visitor logs, payment statuses, and maintenance requests in real-time.</li>
+                          <li>Tools to track community analytics, like amenity usage or security trends.</li>
+                        </ol>
+                      </div>
+                      <div>
+                        <h3>Automation and Efficiency:</h3>
+                        <ol>
+                          <li>Automated systems for resident communications, payment reminders, and visitor management.</li>
+                          <li>Reduced manual workload through app-driven processes.</li>
+                        </ol>
+                      </div>
+                      <div>
+                        <h3>Resident Engagement:</h3>
+                        <ol>
+                          <li>Tools to keep residents informed and engaged, such as event announcements or feedback surveys.</li>
+                          <li>Mechanisms to address complaints or suggestions efficiently.</li>
+                        </ol>
+                      </div>
+                      <div>
+                        <h3>System Compatibility:</h3>
+                        <ol>
+                          <li>Seamless integration with existing property management systems and third-party tools.</li>
+                          <li>Reliable syncing of data between the app and the central management software.</li>
+                        </ol>
+                      </div>
+                    </div>
+                    <div class="challenges">
+                      <h4>Challenges: </h4>
+                      <div>
+                        <h3>Operational Overload:</h3>
+                        <ol>
+                          <li>Struggles with manual workflows for visitor management, payments, and complaints.</li>
+                          <li>Needs an app to centralize and automate operations without causing data errors.</li>
+                        </ol>
+                      </div>
+                      <div>
+                        <h3>Resident Adoption Resistance:</h3>
+                        <ol>
+                          <li>Faces difficulty convincing all residents to use the app, especially elderly or less tech-savvy individuals.</li>
+                          <li>Balancing digital and offline systems increases workload.</li>
+                        </ol>
+                      </div>
+                      <div>
+                        <h3>System Integration:</h3>
+                        <ol>
+                          <li>Needs the app to work smoothly with existing management software and devices.</li>
+                          <li>Poor integration can result in inefficiencies or repeated work.</li>
+                        </ol>
+                      </div>
+                    </div>
+                    <div class="goals">
+                      <h4>Goals:</h4>
+                      <ol>
+                        <li>Efficient visitor and staff management</li>
+                        <li>Automating recurring tasks like fee reminders and utility tracking.</li>
+                      </ol>
+                    </div>
+                  </div>
+                  </div>
+               </div>
+                </div>
+              </article>
+              <article class="modal__body__content__competiveAnalysis">
+                <h1>competiveAnalysis</h1>
+                <p>A competitive analysis was conducted to benchmark Gated Community App against existing gated community apps:</p>
+                <div class="modal__body__content__competiveAnalysis__col-1">
+                  <div class="modal__body__content__competiveAnalysis__col-1__cards">
+                    <table>
+                      <thead>
+                        <tr><th><strong>Feature</strong></th><th><strong>App A</strong></th><th><strong>App B</strong></th><th><strong>Gated Community App</strong></th></tr>
+                      </thead>
+                        <tbody>
+                          <tr><td>Visitor Management</td><td>✅</td><td>✅</td><td>✅ Advanced with QR and real-time tracking</td></tr>
+                          <tr><td>Amenity Booking</td><td>✅</td><td>❌</td><td>✅ Integrated calendar</td></tr>
+                          <tr><td>Payments</td><td>❌</td><td>✅</td><td>✅ Online payments with history</td></tr>
+                          <tr><td>Communication &amp; Alerts</td><td>✅</td><td>✅</td><td>✅ Customizable broadcast and forums</td></tr>
+                          <tr><td>Community Engagement</td><td>❌</td><td>❌</td><td>✅ Events, forums, and classifieds</td></tr>
+                          <tr><td>Multi-language Support</td><td>❌</td><td>✅</td><td>✅ With intuitive UX for elderly</td></tr>
+                          <tr><td>Data Security &amp; Privacy</td><td>✅</td><td>❌</td><td>✅ AES encryption and GDPR compliance</td></tr>
+                        </tbody>
+                      </table>
+                    
+                  </div>
+                </div>
+              </article>
+              <article class="modal__body__content__preparing-the-journey">
+                <h1>preparing-the-journey</h1>
+                <div class="modal__body__content__competiveAnalysis__row">
+                  <img src="../../images/gated-flow.jpg" />
+                </div>
+              </article>
+              <article class="modal__body__content__wireflow">
+                <h1>wireflow</h1>
+                <div class="modal__body__content__competiveAnalysis__row">
+                  <img src="../../images/gated_app_screens.jpg" />
+                </div>
+              </article>
+          </div>
+        </div>
+         <!--Ends-->
+        </div>
+      </div>
+      <div class="modal" id="case3">
+        <div class="modal__header">
+          <h1 class="modal__title">Project 3</h1>
+          <button class="modal__close" data-target="#case3">
+            <svg
+              width="32"
+              height="31"
+              viewBox="0 0 32 31"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              aria-hidden="true"
+            >
+              <rect
+                id="Rectangle"
+                x="2.91846"
+                y="0.297211"
+                width="40"
+                height="3"
+                transform="rotate(45 2.91846 0.297211)"
+                fill="#00001A"
+              />
+              <rect
+                id="Rectangle_2"
+                x="0.797363"
+                y="28.5815"
+                width="40"
+                height="3"
+                transform="rotate(-45 0.797363 28.5815)"
+                fill="#00001A"
+              />
+            </svg>
+          </button>
+        </div>
+        <div class="modal__body">     
+          <div class="modal__body__banner rented">
+            <h2 class="modal__body__banner_title">Rental House</h2>
+            <h3 class="modal__body__banner_subTitle">Find your perfect place</h2>
+              <div class="modal__body__banner__footer">
+                <div class="modal__body__banner__footer__company">                
+                  <ion-icon name="bag-outline"></ion-icon>
+                  <span>Project:</span>Rental House
+                </div>
+                <div class="modal__body__banner__footer__month">
+                  <ion-icon name="time-outline"></ion-icon>
+                  <span>Months:</span>6 Months</div>
+                <div class="modal__body__banner__footer__date">
+                  <ion-icon name="time-outline"></ion-icon>
+                  <span>Date:</span>July 2024</div>
+                <div class="modal__body__banner__footer__role">
+                  <ion-icon name="person-outline"></ion-icon>
+                  <span>Role:</span>UX Lead</div>
+              </div>
+          </div>
+          <!--Body contents for Rental House-->
+          <div class="modal__body__content">
+            <article class="modal__body__content__overview">
+              <h1>Overview: </h1> 
+              <p>The goal of the Rental House app is to streamline the process of finding, exploring, and securing rental properties. The app will provide users with a tailored search experience based on preferences such as budget, location, property type, and amenities. It will also include features such as virtual tours, neighborhood insights, and booking viewing appointments.</p>
+                <section  class="modal__body__content__section__title">
+                  <h1>Project Vision</h1>
+                  <div class="modal__body__content__two-columns">
+                    <div class="modal__body__content__two-columns__left">
+                      <h4>Target Audience:</h4>
+                        <ul class="modal__body__content__two-columns__left__list">
+                          <li><span>Renters</span> and <span>Technicians</span>People looking for apartments, houses, or condos.</li>
+                          <li><span>Landlords</span>Property owners who want to list their properties for rent.</li>
+                          <li><span>Real Estate Agents</span> Professionals who manage multiple listings and help renters find suitable properties.</li>
+                        </ul>
+                    </div>
+                    <div class="modal__body__content__two-columns__right">
+                      <h4>Key Features:</h4>
+                      <ul class="modal__body__content__two-columns__right__list">
+                        <li><span>Search Filters:</span> Budget, location, number of bedrooms, pet-friendliness, amenities (e.g., parking, gym).</li>
+                        <li><span>Property Listings: </span>Listings with images, detailed descriptions, and virtual tours.</li>
+                        <li><span>Map View:</span>Interactive map to see the property's location in relation to key areas like schools, work, public transport, etc.</li>  
+                        <li><span>Booking Appointments: </span>Ability to book viewings directly from the listing.</li>
+                        <li><span>Save and Share Properties:</span> Users can save their favorite listings and share them with others.</li>  
+                        <li><span>Rental Application Process:</span> Option to apply for the property directly from the app.</li>                          
+                      </ul>
+                    </div>
+                  </div>
+                </section>
+                <section class="modal__body__content__section__title">
+                  <h1>Challenges</h1>
+                  <div class="modal__body__content__row">  
+                    <div class="modal__body__content__row__card"> 
+                      <div class="modal__body__content__row__card__columns">
+                        <ul class="modal__body__content__row__card__columns__list">
+                          <li><span>Complex Search Filters: </span>Finding the balance between providing detailed filters (e.g., square footage, amenities) without overwhelming the user.</li>
+                          <li><span>Data Accuracy:</span> Ensuring that the property data (availability, prices, photos) is up-to-date and accurate.</li>
+                          <li><span>User Trust:</span> Users need reliable information on properties, landlords, and neighborhoods to make informed decisions.</li>
+                          <li><span>Real-Time Updates:</span> Ensuring that properties listed as available are actually available when users try to book viewings.</li>
+                          <li><span>User Accessibility:</span> The app must be easy to navigate for a broad range of users, including those with disabilities (e.g., colorblind users, text-to-speech functionality).</li>
+                          <li><span>Location Accuracy:</span> For users relying on location-based searches, delivering accurate property locations on maps and proximity to nearby amenities.</li>                                         
+                        </ul> 
+                      </div>           
+                  </div>
+                </div>  
+                </section>
+                <section class="modal__body__content__section__title">
+                  <h1>Kickoff</h1>
+                  <div class="modal__body__content__row">  
+                    <div class="modal__body__content__row__card"> 
+                      <div class="modal__body__content__row__card__columns">
+                        <ul class="modal__body__content__row__card__columns__list__kickoff">
+                         <li><span>Stakeholder Meeting:</span>Align on project goals, features, and timeline.</li>
+                         <li><span>Market Research:</span>Analyze current trends in rental platforms (e.g., Zillow, Apartments.com) and identify areas for improvement.</li>
+                         <li><span>User Research:</span>Conduct surveys, interviews, or user testing to understand the pain points and needs of potential users.</li>
+                         <li><span>Defining Success Metrics:</span>Key metrics might include user retention rate, number of bookings made, user satisfaction with the search experience, etc.</li>
+                        </ul> 
+                      </div>           
+                  </div>
+                </div>  
+                </section>                
+                </article>    
+                <article class="modal__body__content__persona">
+                  <h1>Meet the user</h1>
+                  <div class="modal__body__content__persona__container">
+                    <div class="modal__body__content__persona__container__primary">
+                      <div class="modal__body__content__persona__container__card">   
+                      <div class="modal__body__content__persona__container__header">
+                      <img src="images/avatar_one.jpg" class="modal__body__content__persona__container__header__profile-pic" alt="" />
+                      <div class="persona-profile">
+                        <h4>Primary</h4>
+                        <ul>
+                          <li><span>Name:</span> James</li>
+                          <li><span>Age:</span>28</li>
+                          <li><span>Occupation:</span> Software Developer</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="modal__body__content__persona__container__description">
+                      <div class="needs">
+                        <h4>Needs:</h4>
+                        <ol>
+                          <li>A 1-bedroom apartment near his workplace, ideally in a quiet neighborhood.</li>
+                          <li>Flexible lease terms, pet-friendly (he has a dog).</li>                            
+                        </ol>
+                      </div>
+                      <div class="challenges">
+                        <h4>Challenges: </h4>
+                        <ol>
+                          <li>Limited time to view properties in person due to work schedule.</li>
+                          <li>Struggles to find listings that match his specific criteria (pet-friendly, budget, proximity to work).</li>                            
+                        </ol>
+                      </div>
+                      <div class="goals">
+                        <h4>Goals:</h4>
+                        <ol>
+                          <li>o	Find a modern, affordable apartment with good transport links.</li>
+                        </ol>
+                      </div>
+                    </div>
+                    </div>
+                    </div>
+                    <div class="modal__body__content__persona__container__secondary">
+                      <div class="modal__body__content__persona__container__card">                      
+                      <div class="modal__body__content__persona__container__header">
+                        <img src="images/avatar_two.jpg" class="modal__body__content__persona__container__header__profile-pic" alt="" />
+                        <div class="persona-profile">
+                          <h4>secondary</h4>
+                          <ul>
+                            <li><span>Name:</span> Maria</li>
+                            <li><span>Age:</span>35</li>
+                            <li><span>Occupation:</span> Teacher</li>
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="modal__body__content__persona__container__description">
+                        <div class="needs">
+                          <h4>Needs:</h4>
+                          <ol>
+                            <li>A 3-bedroom house in a family-friendly neighborhood, with access to good schools and parks.</li>
+                            <li>Wants a yard for her children and prefers a safe, quiet area.</li>                              
+                          </ol>
+                        </div>
+                        <div class="challenges">
+                          <h4>Challenges: </h4>
+                          <ol>
+                            <li>Finding properties in her price range with enough space and suitable amenities.
+                            <li>Concern about the safety and convenience of the neighborhood.</li>                           
+                          </ol>
+                        </div>
+                        <div class="goals">
+                          <h4>Goals:</h4>
+                          <ol>
+                            <li>Find a spacious house within her budget, close to good schools, with room for the family to grow.</li>
+                          </ol>
+                        </div>
+                      </div>
+                    </div>
+                    </div>
+                    <div class="modal__body__content__persona__container__supplementary">  
+                      <div class="modal__body__content__persona__container__card">                      
+                     <div class="modal__body__content__persona__container__header">
+                      <img src="images/avatar_three.jpg" class="modal__body__content__persona__container__header__profile-pic" alt="" />
+                      <div class="persona-profile">
+                        <h4>supplementary</h4>
+                        <ul>
+                          <li><span>Name:</span> Tom</li>
+                          <li><span>Age:</span>65</li>
+                          <li><span>Occupation:</span> Retired Engineer</li>
+                        </ul>
+                      </div>
+                    </div>
+                     <div class="modal__body__content__persona__container__description">
+                      <div class="needs">
+                        <h4>Needs:</h4>
+                        <ol>
+                          <li>A 2-bedroom apartment in a quiet area, ideally with access to public transportation.</li>
+                          <li>Would like a property without stairs due to mobility concerns.</li>                            
+                        </ol>
+                      </div>
+                      <div class="challenges">
+                        <h4>Challenges: </h4>
+                        <ol>
+                          <li>Navigating apps with complex interfaces; needs clear, large fonts and intuitive navigation.</li>
+                          <li>Concern about finding a suitable property that offers peace and accessibility.</li>                          
+                        </ol>
+                      </div>
+                      <div class="goals">
+                        <h4>Goals:</h4>
+                        <ol>
+                          <li>Find a ground-floor apartment near a hospital and other essential services, ideally with a garden.</li>
+                        </ol>
+                      </div>
+                    </div>
+                    </div>
+                 </div>
+                  </div>
+                </article>
+                <article class="modal__body__content__competiveAnalysis">
+                  <h1>competiveAnalysis</h1>
+                  <p>Here’s an analysis of current competitors in the Find a Rental House space:</p>
+                  <div class="modal__body__content__competiveAnalysis__row">
+                    <h3>Zillow Rental</h3>                        
+                    <div class="modal__body__content__competiveAnalysis__three-col">
+                      <div class="modal__body__content__competiveAnalysis__three-col__cards">                      
+                        <h4>Strength</h4>                      
+                        <ul>
+                          <li>Comprehensive listings with accurate details (photos, descriptions, prices).</li>
+                           <li>Interactive map with neighborhood insights.</li>                        
+                           <li>Zestimate feature for home prices.</li>                          
+                        </ul>
+                      </div>
+                      <div class="modal__body__content__competiveAnalysis__three-col__cards">
+                        <h4>Weaknesses</h4>
+                        <ul>
+                          <li>Limited search filters for specific needs (e.g., pet-friendly or public transport proximity).</li>
+                          <li>The user interface can feel cluttered.</li>                          
+                        </ul>
+                      </div>
+                      <div class="modal__body__content__competiveAnalysis__three-col__cards">
+                        <h4>Opportunity</h4>
+                        <ul>
+                          <li>Improve the design to provide a more streamlined and intuitive experience.</li>
+                          <li>Add more filters for accessibility and property conditions.</li>                          
+                        </ul>
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="modal__body__content__competiveAnalysis__row">
+                    <h3>Apartments.com</h3>                        
+                    <div class="modal__body__content__competiveAnalysis__three-col">
+                      <div class="modal__body__content__competiveAnalysis__three-col__cards">                      
+                        <h4>Strength</h4>                      
+                        <ul>
+                          <li>Strong search filters, including pet-friendliness, parking, and amenities.</li>
+                          <li>Virtual tours and photos of listings.</li>
+                        </ul>
+                      </div>
+                      <div class="modal__body__content__competiveAnalysis__three-col__cards">
+                        <h4>Weaknesses</h4>
+                        <ul>
+                          <li>Listings may not always be up-to-date.</li>
+                          <li>The search interface can be overwhelming for new users.</li>
+                        </ul>
+                      </div>
+                      <div class="modal__body__content__competiveAnalysis__three-col__cards">
+                        <h4>Opportunity</h4>
+                        <ul>
+                          <li>Enhance the booking experience and offer real-time availability updates.</li>                          
+                        </ul>
+                      </div>
+                    </div>                    
+                  </div>
+                  <div class="modal__body__content__competiveAnalysis__row">
+                    <h3>Realtor.com</h3>                        
+                    <div class="modal__body__content__competiveAnalysis__three-col">
+                      <div class="modal__body__content__competiveAnalysis__three-col__cards">                      
+                        <h4>Strength</h4>                      
+                        <ul>
+                          <li>Listings come with detailed descriptions, floor plans, and neighborhood insights.
+                          <li>Integration of real-time availability.</li>                          
+                        </ul>
+                      </div>
+                      <div class="modal__body__content__competiveAnalysis__three-col__cards">
+                        <h4>Weaknesses</h4>
+                        <ul>
+                          <li>Lacks some of the features of a dedicated rental app, such as booking viewings or lease signing.</li>
+                          <li>The mobile app has occasional glitches.</li>                          
+                        </ul>
+                      </div>
+                      <div class="modal__body__content__competiveAnalysis__three-col__cards">
+                        <h4>Opportunity</h4>
+                        <ul>
+                          <li>Add functionality for applying for rental properties directly through the app.</li>                          
+                        </ul>
+                      </div>
+                    </div>                    
+                  </div>
+                </article>
+                <article class="modal__body__content__preparing-the-journey">
+                  <h1>preparing-the-journey</h1>
+                  <div class="modal__body__content__competiveAnalysis__row">
+                    <img src="../../images/RentalHouse-flow.jpg" />
+                  </div>
+                </article>
+                <article class="modal__body__content__wireflow">
+                  <h1>wireflow</h1>
+                  <div class="modal__body__content__competiveAnalysis__row">
+                    <img src="../../images/find-home_screen.jpg" />
+                  </div>
+                </article>
+            </div>
+          </div>
+          <!--Ends here-->
+        </div>
+      </div>
+    </main>
 
-    <!-- <script
-      src="http://code.jquery.com/jquery-3.3.1.min.js"
-      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-      crossorigin="anonymous"
-    ></script>
+    <!-- particles.js container -->
+
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-      integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
-      integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
-      crossorigin="anonymous"
-    ></script> -->
-    <script src="./scripts/jquery-3.3.1.min.js"></script>
-    <script src="./scripts/popper.min.js"></script>
-    <script src="./scripts/bootstrap.min.js"></script>
-    <script
-      src="./scripts/ekko-lightbox.min.js"
-      integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.8.1/vanilla-tilt.min.js"
+      integrity="sha512-wC/cunGGDjXSl9OHUH0RuqSyW4YNLlsPwhcLxwWW1CR4OeC2E1xpcdZz2DeQkEmums41laI+eGMw95IJ15SS3g=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
-    <script src="./scripts/ekko-lightbox.min.js.map"></script>
-    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js.map"></script>-->
-    <!-- <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
-      integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    ></script> -->
-
-    <script>
-      // Get the current year for the copyright
-      $("#year").text(new Date().getFullYear());
-      $(".port-item").click(function () {
-        $(".collapse").collapse("hide");
-        $(document).on("click", '[data-toggle="light-box"]', function (e) {
-          e.preventDefault();
-          //$(this).ekkoLightbox();
-          $(this).ekkoLightbox({ alwaysShowClose: true });
-        });
-      });
-    </script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <script src="scripts/particles.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>

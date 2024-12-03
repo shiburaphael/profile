@@ -1,0 +1,65 @@
+@use '../util/' as u;
+#projectSection{ 
+    //background-color: var(--c-blue);
+    padding-block: u.rem(16);
+    h1{
+
+        text-align: center;  
+        text-transform: uppercase;
+        color: var(--accent);
+        border-bottom: u.rem(4) dotted  var(--silver);       
+        padding-inline: u.rem(64);
+        background:var(--gradient-text);
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+    }
+}
+   
+.projects{
+    display: grid;
+    grid-template-rows: auto;
+    grid-auto-rows: max-content;
+    gap:u.rem(16);
+    padding-inline: u.rem(16);
+    margin-top:u.rem(32);     
+    @media(width > u.em(1110)){  
+          
+        grid-template-columns: repeat(3, 1fr);
+    }
+    &__list{
+        
+
+        &__content{           
+            background:var(--c-white);
+            color: var(--c-blue);
+            margin: 0 20px;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            transform: translateY(-80px);
+            padding: 20px;
+            border-radius: 5px;
+            &__para{
+                text-align: justify;
+            }
+            &__footer{
+                display: flex;
+                justify-content: space-between;
+                &__btn{                    
+                    &__view{
+                        color:var(--c-yellow); 
+                        &:hover{
+                            font-weight: 700;
+                            color: var(--invalid);
+                        }
+                    }
+                }
+                &__published-date{
+                    color: var(--accent);
+                }
+                
+            }
+            
+        }
+    }
+
+}

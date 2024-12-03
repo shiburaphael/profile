@@ -1,0 +1,66 @@
+@keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  
+  @keyframes blink {
+    50% {
+      border-color: transparent;
+    }
+  }
+  
+  .fadeIn {
+    animation: fadeIn 2s;
+    animation-fill-mode: both;
+  }
+  
+  .wait-2s {
+    animation-delay: 4s;
+  }
+  
+  .wait-3s {
+    animation-delay: 5s;
+  }
+  
+  .wait-4s {
+    animation-delay: 6s;
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes gradient {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+  
+  @keyframes typewriter{
+    to{
+      left:100%;
+    }
+  }
+  @keyframes blinking{
+    to{
+      background: transparent;
+    }
+  }
+  @keyframes fadeInUp{
+    to{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

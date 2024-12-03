@@ -1,0 +1,41 @@
+@use '../util/' as u;
+.footer{
+    display: grid;
+    grid-template-rows: 1fr auto;
+    padding-inline: u.rem(16);
+    border-top: u.rem(2) solid var(--c-gray);
+    @media(width > u.rem(1110)){
+        grid-template-columns: repeat(4,1fr);
+        align-items: center;
+    }
+    &__logo{        
+        img{
+            width:u.rem(64);
+        }
+        &__imgs{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            gap: u.rem(16);
+        }
+    }
+    &__copyright{
+        grid-column: 2 / 4;
+        p{
+            padding: 0;
+            margin: 0;
+            font-size:u.rem(14);
+            text-align: center;
+            color: var(--c-gray);
+        }
+    }
+    &__social{
+        display: flex;
+        justify-content: space-between;
+        font-size: u.rem(32);
+        padding-inline: u.rem(16);
+        ion-icon:hover{
+            color: var(--accent);
+        }
+    }
+}

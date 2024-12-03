@@ -1,0 +1,60 @@
+@use '../util/' as u;
+/* SKILLS */
+
+
+.skills {
+    position: relative;
+    &__lists {
+        display: grid;
+        grid-template-rows: auto;
+        grid-auto-rows: max-content;
+        justify-items: center;
+        gap: 24px;
+        padding: u.rem(40); 
+        margin-block-end: u.rem(48);
+        @media(width > u.em(1110)){
+            grid-template-columns: repeat(3, 1fr);
+            gap:u.rem(52) u.rem(24);
+            border: none;
+            padding-block:u.rem(52) u.rem(0);
+           
+        }
+        &__item{
+              text-align: center;
+              @media(width > u.em(1110)){
+                text-align: center;
+              }
+        }
+        &__title{
+              font-size: u.rem(32);    
+              line-height: 1.17;
+              margin-block-end:u.rem(2);
+        }
+        &__description{
+              margin-block-end: 0;
+        }
+    }      
+    &__rings{
+        @media(width > u.em(1110)){
+                img{
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                translate: 42% 25%;
+                // translate: 40% 50%;
+            }
+        } 
+        @media(width < u.em(1110)){
+            img{
+
+                translate: -40% 50%;
+                left: 100%;
+            }
+        
+        }
+       
+      
+    }  
+}
+  
+  

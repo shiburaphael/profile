@@ -1,0 +1,145 @@
+@use'../util/' as u;
+.wrapper{
+   width:min(u.rem(1110),calc(100% - u.rem(32)));
+   margin-inline: auto;
+   background: var(--bg-page);
+}
+.feature{
+   width:100%;
+   display: flex;  
+   padding-block:u.rem(32);
+   align-items: center;
+   @media(width <u.em(1110)){
+      flex-direction: column;
+      align-items: stretch;
+      text-align: center;
+   }   
+   &__left{
+      padding:u.rem(16);
+      position: relative;     
+      &__title{
+         font-family: 'Roboto Mono', monospace;
+         h2{
+            width: max-content;
+            margin: 0;
+            font-size: u.rem(32);
+            position: relative;
+            padding: 0.5rem;
+            &::after{
+               content:'';
+               position: absolute;
+               top: 0;
+               bottom: 0;
+               left: 0;
+               right: 0;
+               width:u.rem(2);
+               background: var(--accent);
+               animation: 
+               typewriter var(--typewriterSpeed) steps(var(--typewriterChar)) 1s forwards,
+               blinking var(--blinkingSpeed) steps(var(--typewriterChar)) infinite;
+            }
+            &::before{
+               content: '';
+               position: absolute;
+               top: 0;
+               bottom: 0;
+               left: 0;
+               right: 0;
+               animation: typewriter var(--typewriterSpeed) steps(var(--typewriterChar)) 1s forwards;
+               background:var(--bg-page);
+             
+            }
+         }
+         h4{
+            width: max-content;
+            margin: 0; 
+            font-size: u.rem(26);
+            position: relative;
+            &::after{
+               content:'';
+               position: absolute;
+               top: 0;
+               bottom: 0;
+               left: 0;
+               right: 0;
+            }
+            &::before{
+               content: '';
+               position: absolute;
+               top: 0;
+               bottom: 0;
+               left: 0;
+               right: 0;
+               // background: tomato;
+            }
+         }
+         
+      }   
+
+   }
+   &__profile{
+      padding-inline: u.rem(16);
+      @media(width <u.em(1110)){
+         order:-1;
+      }    
+      img{
+         border-radius: 100%;
+         width: u.rem(350);
+         z-index: 1;
+      }
+   }
+   &__title{
+      
+      // width:u.rem(25)ch;
+      // border-right:u.rem(2) solid;
+      &__underline{
+         font-size: u.rem(24);
+         background-image: linear-gradient(to right, var(--accent) 75%, var(--accent) 75%);
+         background-position: 0 1.18em;
+         background-repeat: repeat-x;
+         background-size: 8px 4px;
+
+         //
+         opacity: 0;
+         transform: translateY(3rem);
+         animation: fadeInUp 2s ease calc(var(--typewriterSpeed) + 1s) forwards;
+      }
+
+   }
+   &__description{
+      font-size: u.rem(20);
+   }
+   &__ctaBtns{      
+      margin-block-end: u.rem(32);
+      display: flex;
+      flex-direction:column;      
+      font-size:u.rem(12);
+      padding:u.rem(1) u.rem(4);
+      align-items: stretch;
+      @media(width >= u.rem(1110)){
+         flex-direction:row;
+      }
+      &__btn-cta{ 
+         display: flex;
+         align-items: center;
+         gap: u.rem(4);      
+         color: var(--c-blue);
+         font-weight: 700;
+         border-radius: u.rem(4);
+         background: var(--gradient-text);
+         margin-right: u.rem(8);
+         padding: u.rem(16);
+         @media(width < u.rem(1110)){
+            flex:1;
+            margin-block: u.rem(8);   
+         }
+         ion-icon{
+            font-size: u.rem(24);
+            color: var(--c-blue);
+         }
+         
+      }
+
+   }
+
+}
